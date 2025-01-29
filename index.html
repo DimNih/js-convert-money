@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MONEY IS MONEY</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+ <link rel="stylesheet" href="styles.css"/>
+
+</head>
+<body>
+  <div class="container">
+    <h1>CONVERT🌍MONEY</h1>
+    <form id="converter-form">
+      <div class="input-group">
+        <input type="number" id="amount" placeholder="Enter amount" required>
+      </div>
+      
+      <div class="currency-group">
+        <select id="from-currency">
+          <option value="USD">🇺🇸 USD - US Dollar</option>
+          <option value="EUR">🇪🇺 EUR - Euro</option>
+          <option value="IDR">🇮🇩 IDR - Rupiah</option>
+          <option value="GBP">🇬🇧 GBP - Pound</option>
+        </select>
+        
+        <i class="fas fa-exchange-alt"></i>
+
+        <select id="to-currency">
+          <option value="IDR">🇮🇩 IDR - Rupiah</option>
+          <option value="USD">🇺🇸 USD - US Dollar</option>
+          <option value="EUR">🇪🇺 EUR - Euro</option>
+          <option value="GBP">🇬🇧 GBP - Pound</option>
+        </select>
+      </div>
+      
+      <button type="submit">CONVERT<i class="fas fa-rocket"></i></button>
+    </form>
+    
+    <div id="result">
+      <h2>RESULT CONVERT</h2>
+      <p id="converted-amount"></p>
+    </div>
+    
+    <p id="error" class="error">Error Convert </p>
+  </div>
+
+  <script src="bekend.js"></script>
+</body>
+</html>
